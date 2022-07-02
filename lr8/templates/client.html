@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>Информация</h3>
+<p><b>Имя:</b> {{ cl.first_name }}</p>
+<p><b>Фамилия:</b> {{ cl.last_name }}</p>
+<p><b>E-mail:</b> {{ cl.email }}</p>
+<p><b>Город:</b> {{ cl.city }}</p>
+<p><b>Индекс:</b> {{ cl.index }}</p>
+<p><b>Адрес:</b> {{ cl.address }}</p>
+{% endblock %}

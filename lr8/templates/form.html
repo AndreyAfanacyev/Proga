@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/" method="POST">
+    <h1>Регистрация на конференцию</h1>
+
+    <div class="row">
+        <div class="col">
+            <label>Фамилия</label>
+        </div>
+        <div class="col">
+            <input type="text" name="lastname">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Имя</label>
+        </div>
+        <div class="col">
+            <input type="text" name="firstname">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>E-mail</label>
+        </div>
+        <div class="col">
+            <input type="email" name="email">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Город</label>
+        </div>
+        <div class="col">
+            <input type="text" name="city">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Почтовый индекс</label>
+        </div>
+        <div class="col">
+            <input type="text" name="index">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label>Адрес</label>
+        </div>
+        <div class="col">
+            <input type="text" name="address">
+        </div>
+    </div>
+    <button type="submit">Отправить</button>
+</form>
+{% endblock %}
