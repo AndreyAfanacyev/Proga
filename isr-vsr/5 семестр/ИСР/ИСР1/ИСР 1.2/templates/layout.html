@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+            * {
+                font-family: 'Open Sans', sans-serif;
+            }
+            .row {
+                display: flex;
+                margin-bottom: 8px;
+            }
+            .col {
+                width: 160px;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            table, tr, td {
+                border: 1px solid black;
+                padding: 2px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            {% block content %}{% endblock %}
+        </div>
+        <hr>
+        <p>© Андрей Афанасьев, 2022</p>
+    </body>
+</html>

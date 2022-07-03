@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<h4>Регистрация на конференцию</h4>
+<table>
+    <tr>
+        <td>Фамилия, имя</td>
+        <td>E-mail</td>
+        <td>Город</td>
+        <td>Почтовый индекс</td>
+        <td>Адрес</td>
+    </tr>
+    {% for client in clients %}
+    <tr>
+        <td>{{ client.last_name }} {{ client.first_name }}</td>
+        <td>{{ client.email }}</td>
+        <td>{{ client.city }}</td>
+        <td>{{ client.index }}</td>
+        <td>{{ client.address }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
